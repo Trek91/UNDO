@@ -800,3 +800,14 @@ Trek91/UNDO did not exist. Curated116-file scan PASS: no detected credentials or
 unredacted local profile paths; no databases/.env/caches in selected paths. Commit
 author will use Trek91's GitHub noreply address; existing global Git identity remains
 unchanged. No application code/pins or original verified ZIP bytes changed.
+
+GitHub publication PASS: gh repo create Trek91/UNDO --public --source . --remote
+origin --push succeeded. Public URL: https://github.com/Trek91/UNDO; default branch
+main. Initial commit 70e611d71a340370aba29b812fa930fb3735a042. Independent remote API tree
+and git ls-remote checks PASS: all116 selected files present, no extra files or
+local databases/.env/caches.19 unrelated pre-existing intent-to-add index entries
+remain unchanged; untracked historical evidence/backups remain local. Original
+verified ZIP SHA256 remains ba53b3879d4db24c7fd5e327d244b30a73a7d79db7215e304e49778561b53187.
+This publication adds portable/redacted documentation; application logic, model
+weights, dependency pins and the running local ledger are unchanged. No new
+application test results are claimed for this documentation-only publication.
