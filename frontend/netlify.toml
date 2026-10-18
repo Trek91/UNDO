@@ -1,0 +1,5 @@
+# Netlify build settings (base directory: frontend).
+# Publish the Vite build output, never the source index.html that references /src/main.tsx.
+[build]
+  command = "npm run build"
+  publish = "dist"
