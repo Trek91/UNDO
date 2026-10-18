@@ -1,0 +1,503 @@
+{
+  "status": "EXPERIMENTAL",
+  "version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+  "target": "conditional_daily_arrival_hazard",
+  "provenance": "Deterministic synthetic invoices; invoice split before at-risk daily expansion, no real customer validation.",
+  "dataset_seed": 20261017,
+  "training_invoices": 480,
+  "heldout_invoices": 120,
+  "train_daily_observations": 5064,
+  "train_daily_prevalence": 0.06299368088467615,
+  "invoice_overlap": 0,
+  "daily": {
+    "observations": 1125,
+    "positives": 94,
+    "negatives": 1031,
+    "predicted_positives": 0,
+    "true_positives": 0,
+    "true_negatives": 1031,
+    "false_positives": 0,
+    "false_negatives": 94,
+    "prevalence": 0.08355555555555555,
+    "threshold": 0.5,
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0,
+    "brier": 0.07397396463575107,
+    "log_loss": 0.2702076061724716,
+    "classification": {
+      "precision": {
+        "value": null,
+        "defined": false,
+        "numerator": 0,
+        "denominator": 0,
+        "status": "undefined",
+        "reason": "no positive predictions (0 predicted positives)"
+      },
+      "recall": {
+        "value": 0.0,
+        "defined": true,
+        "numerator": 0,
+        "denominator": 94,
+        "status": "defined",
+        "reason": null
+      },
+      "f1": {
+        "value": 0.0,
+        "defined": true,
+        "numerator": 0,
+        "denominator": 94,
+        "status": "defined",
+        "reason": null
+      },
+      "counts": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 94
+      },
+      "provenance": "Confusion-count presentation; original raw metrics retained separately."
+    }
+  },
+  "daily_baseline": {
+    "observations": 1125,
+    "positives": 94,
+    "negatives": 1031,
+    "predicted_positives": 0,
+    "true_positives": 0,
+    "true_negatives": 1031,
+    "false_positives": 0,
+    "false_negatives": 94,
+    "prevalence": 0.08355555555555555,
+    "threshold": 0.5,
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0,
+    "brier": 0.07699681538133897,
+    "log_loss": 0.2906364769367512,
+    "classification": {
+      "precision": {
+        "value": null,
+        "defined": false,
+        "numerator": 0,
+        "denominator": 0,
+        "status": "undefined",
+        "reason": "no positive predictions (0 predicted positives)"
+      },
+      "recall": {
+        "value": 0.0,
+        "defined": true,
+        "numerator": 0,
+        "denominator": 94,
+        "status": "defined",
+        "reason": null
+      },
+      "f1": {
+        "value": 0.0,
+        "defined": true,
+        "numerator": 0,
+        "denominator": 94,
+        "status": "defined",
+        "reason": null
+      },
+      "counts": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 94
+      },
+      "provenance": "Confusion-count presentation; original raw metrics retained separately."
+    }
+  },
+  "horizon": {
+    "observations": 120,
+    "positives": 54,
+    "negatives": 66,
+    "predicted_positives": 22,
+    "true_positives": 13,
+    "true_negatives": 57,
+    "false_positives": 9,
+    "false_negatives": 41,
+    "prevalence": 0.45,
+    "threshold": 0.5,
+    "precision": 0.5909090909090909,
+    "recall": 0.24074074074074073,
+    "f1": 0.34210526315789475,
+    "brier": 0.23407548600545616,
+    "log_loss": 0.6582843994593273,
+    "classification": {
+      "precision": {
+        "value": 0.5909090909090909,
+        "defined": true,
+        "numerator": 13,
+        "denominator": 22,
+        "status": "defined",
+        "reason": null
+      },
+      "recall": {
+        "value": 0.24074074074074073,
+        "defined": true,
+        "numerator": 13,
+        "denominator": 54,
+        "status": "defined",
+        "reason": null
+      },
+      "f1": {
+        "value": 0.34210526315789475,
+        "defined": true,
+        "numerator": 26,
+        "denominator": 76,
+        "status": "defined",
+        "reason": null
+      },
+      "counts": {
+        "true_positives": 13,
+        "false_positives": 9,
+        "false_negatives": 41
+      },
+      "provenance": "Confusion-count presentation; original raw metrics retained separately."
+    }
+  },
+  "horizon_baseline": {
+    "observations": 120,
+    "positives": 54,
+    "negatives": 66,
+    "predicted_positives": 0,
+    "true_positives": 0,
+    "true_negatives": 66,
+    "false_positives": 0,
+    "false_negatives": 54,
+    "prevalence": 0.45,
+    "threshold": 0.5,
+    "precision": null,
+    "recall": 0.0,
+    "f1": 0.0,
+    "brier": 0.25969184027777775,
+    "log_loss": 0.7142025379063892,
+    "classification": {
+      "precision": {
+        "value": null,
+        "defined": false,
+        "numerator": 0,
+        "denominator": 0,
+        "status": "undefined",
+        "reason": "no positive predictions (0 predicted positives)"
+      },
+      "recall": {
+        "value": 0.0,
+        "defined": true,
+        "numerator": 0,
+        "denominator": 54,
+        "status": "defined",
+        "reason": null
+      },
+      "f1": {
+        "value": 0.0,
+        "defined": true,
+        "numerator": 0,
+        "denominator": 54,
+        "status": "defined",
+        "reason": null
+      },
+      "counts": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 54
+      },
+      "provenance": "Confusion-count presentation; original raw metrics retained separately."
+    }
+  },
+  "horizon_days": 7,
+  "probability_min": 0.00930274137299807,
+  "probability_max": 0.2481809144006714,
+  "probability_mean": 0.06227397466924253,
+  "calibration": [
+    {
+      "lower": 0.0,
+      "upper": 0.1,
+      "count": 962,
+      "predicted": 0.04989573930754229,
+      "observed": 0.06548856548856549
+    },
+    {
+      "lower": 0.1,
+      "upper": 0.2,
+      "count": 154,
+      "predicted": 0.13018884007855017,
+      "observed": 0.18181818181818182
+    },
+    {
+      "lower": 0.2,
+      "upper": 0.3,
+      "count": 9,
+      "predicted": 0.22327099077171547,
+      "observed": 0.3333333333333333
+    },
+    {
+      "lower": 0.3,
+      "upper": 0.4,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    },
+    {
+      "lower": 0.4,
+      "upper": 0.5,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    },
+    {
+      "lower": 0.5,
+      "upper": 0.6,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    },
+    {
+      "lower": 0.6,
+      "upper": 0.7,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    },
+    {
+      "lower": 0.7,
+      "upper": 0.8,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    },
+    {
+      "lower": 0.8,
+      "upper": 0.9,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    },
+    {
+      "lower": 0.9,
+      "upper": 1.0,
+      "count": 0,
+      "predicted": null,
+      "observed": null
+    }
+  ],
+  "calibration_error": 0.021281580886313024,
+  "benchmark": {
+    "protocol": "v3-heldout-paired-120x3-seeds-100-paths; 1000 invoice-cluster bootstrap replicates",
+    "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+    "weights_digest": "43edd8ab05b40994a52920bf924b69a5031f90031788a6438d0bd6586546dcdc",
+    "source_hashes": {
+      "engine.py": "e9d683bba3caf9e07c6dbe82ce444887f331867ab91cf55831cc567d43fa1a7d",
+      "prediction.py": "df597fc29dafd6f7b44d51c5a5fcd2cdd854578de1399897aadd6da95d509942",
+      "policies.py": "6858031d2acb76e28492bbf062da31b5ec6177e1f684234f804fad3df0021f24"
+    },
+    "dataset_seed": 20261017,
+    "heldout_invoices": 120,
+    "paths_per_decision": 100,
+    "seed_results": [
+      {
+        "seed": 20261017,
+        "policies": {
+          "balance_only": {
+            "shortfall_probability": 0.9583333333333334,
+            "expected_shortfall_paise": 958333,
+            "expected_penalty_paise": 0,
+            "reserve_breach_probability": 0.9583333333333334,
+            "expected_peak_cash_deficit_paise": 958333,
+            "expected_peak_reserve_deficit_paise": 1916667,
+            "expected_remaining_paise": 0
+          },
+          "obligation_rule": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 186667,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1117298,
+            "expected_peak_reserve_deficit_paise": 2050632,
+            "expected_remaining_paise": 574334
+          },
+          "ml_informed": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 186667,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1120000,
+            "expected_peak_reserve_deficit_paise": 2053333,
+            "expected_remaining_paise": 574334
+          },
+          "stress": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 200000,
+            "reserve_breach_probability": 0.9583333333333334,
+            "expected_peak_cash_deficit_paise": 1150000,
+            "expected_peak_reserve_deficit_paise": 2108333,
+            "expected_remaining_paise": 574334
+          }
+        },
+        "choices": {
+          "balance_only": {
+            "full": 120
+          },
+          "obligation_rule": {
+            "partial": 120
+          },
+          "ml_informed": {
+            "partial": 109,
+            "hold": 11
+          },
+          "stress": {
+            "hold": 120
+          }
+        }
+      },
+      {
+        "seed": 20261034,
+        "policies": {
+          "balance_only": {
+            "shortfall_probability": 0.9583333333333334,
+            "expected_shortfall_paise": 958333,
+            "expected_penalty_paise": 0,
+            "reserve_breach_probability": 0.9583333333333334,
+            "expected_peak_cash_deficit_paise": 958333,
+            "expected_peak_reserve_deficit_paise": 1916667,
+            "expected_remaining_paise": 0
+          },
+          "obligation_rule": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 186667,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1117298,
+            "expected_peak_reserve_deficit_paise": 2050632,
+            "expected_remaining_paise": 574334
+          },
+          "ml_informed": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 186667,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1120000,
+            "expected_peak_reserve_deficit_paise": 2053333,
+            "expected_remaining_paise": 574334
+          },
+          "stress": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 200000,
+            "reserve_breach_probability": 0.9583333333333334,
+            "expected_peak_cash_deficit_paise": 1150000,
+            "expected_peak_reserve_deficit_paise": 2108333,
+            "expected_remaining_paise": 574334
+          }
+        },
+        "choices": {
+          "balance_only": {
+            "full": 120
+          },
+          "obligation_rule": {
+            "partial": 120
+          },
+          "ml_informed": {
+            "partial": 109,
+            "hold": 11
+          },
+          "stress": {
+            "hold": 120
+          }
+        }
+      },
+      {
+        "seed": 20261048,
+        "policies": {
+          "balance_only": {
+            "shortfall_probability": 0.9583333333333334,
+            "expected_shortfall_paise": 958333,
+            "expected_penalty_paise": 0,
+            "reserve_breach_probability": 0.9583333333333334,
+            "expected_peak_cash_deficit_paise": 958333,
+            "expected_peak_reserve_deficit_paise": 1916667,
+            "expected_remaining_paise": 0
+          },
+          "obligation_rule": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 186667,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1117298,
+            "expected_peak_reserve_deficit_paise": 2050632,
+            "expected_remaining_paise": 574334
+          },
+          "ml_informed": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 186667,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1120000,
+            "expected_peak_reserve_deficit_paise": 2053333,
+            "expected_remaining_paise": 574334
+          },
+          "stress": {
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "expected_penalty_paise": 200000,
+            "reserve_breach_probability": 0.9583333333333334,
+            "expected_peak_cash_deficit_paise": 1150000,
+            "expected_peak_reserve_deficit_paise": 2108333,
+            "expected_remaining_paise": 574334
+          }
+        },
+        "choices": {
+          "balance_only": {
+            "full": 120
+          },
+          "obligation_rule": {
+            "partial": 120
+          },
+          "ml_informed": {
+            "partial": 109,
+            "hold": 11
+          },
+          "stress": {
+            "hold": 120
+          }
+        }
+      }
+    ],
+    "paired_penalty_benefit_paise": 0,
+    "paired_penalty_benefit_ci95": [
+      0,
+      0
+    ],
+    "decision_advantage": false,
+    "conclusion": "No reliable incremental benefit over the obligation-aware rule established on this held-out protocol.",
+    "assumptions": [
+      "Original untouched held-out invoices and actual synthetic future per invoice; original fixed model.",
+      "Policies choose using prediction/known facts only; realized futures are supplied for scoring afterward.",
+      "Invoice-cluster resampling preserves dependence among repeated seed choices; monetary means round half-even.",
+      "Synthetic evidence only. Three Monte Carlo seeds are not three independent real-world cohorts."
+    ]
+  },
+  "benchmark_status": "verified source/model provenance",
+  "gate": {
+    "eligible": false,
+    "status": "EXPERIMENTAL",
+    "primary_basis": "obligation_rule",
+    "criteria": {
+      "valid_model_and_validation_split": true,
+      "probability_beats_training_prevalence": true,
+      "heldout_decision_benefit": false,
+      "multi_seed_paired_validation": true
+    },
+    "reason": "Reliable held-out decision improvement over the obligation-aware rule has not been established. ML is an experimental comparator; known obligations and reserve rules determine the primary action.",
+    "policy_version": "evidence-gate-v3-1"
+  },
+  "real_world_claims_supported": false,
+  "limitations": [
+    "Synthetic diagnostics and held-out outcomes do not establish real-world accuracy or causal financial benefit.",
+    "Daily threshold 0.5 is diagnostic, not an operating rule; zero predicted positives makes precision undefined.",
+    "Daily hazards combine as 1 minus the product of survival from day 0 through H inclusive.",
+    "Calibration bins with few observations are unreliable; customers and macroeconomic shocks are not jointly modeled.",
+    "Training follows days 0–14; horizons 15–30 extrapolate."
+  ]
+}

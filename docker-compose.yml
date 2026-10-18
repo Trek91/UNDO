@@ -1,0 +1,25 @@
+name: undo-demo
+services:
+  undo:
+    image: ${UNDO_IMAGE:-undo:native}
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "127.0.0.1:${UNDO_PORT:-8080}:8000"
+    environment:
+      UNDO_DB: /app/data/undo.db
+      UNDO_STATIC: /app/frontend/dist
+      UNDO_ORIGINS: http://127.0.0.1:${UNDO_PORT:-8080},http://localhost:${UNDO_PORT:-8080}
+    volumes:
+      - undo_data:/app/data
+    read_only: true
+    tmpfs:
+      - /tmp
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    restart: unless-stopped
+volumes:
+  undo_data:

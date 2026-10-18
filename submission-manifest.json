@@ -1,0 +1,499 @@
+{
+  "version": "UNDO-V3-final-repair",
+  "source": "curated current working-tree bytes; no Git HEAD dependency",
+  "runtime_assets": [
+    "backend/app/evidence/validation.json"
+  ],
+  "exclusions": {
+    "local_only": [
+      ".runtime/",
+      ".venv/",
+      "node_modules/",
+      "data/",
+      "*.db*",
+      ".git/",
+      ".env"
+    ],
+    "generated": [
+      "dist/",
+      "frontend/dist/",
+      "test-results/",
+      "playwright-report/",
+      "__pycache__/"
+    ],
+    "historical_or_host_specific": [
+      "docs/audit/",
+      "docs/v3/",
+      "docs/repair/",
+      "scripts/audit_*.py",
+      "scripts/v3_*.py"
+    ],
+    "reason": "No live financial database, local backups, user state captures, machine-specific release scripts or recursive archive; historical markdown retained and labelled superseded. Runtime and test fixtures are synthetic."
+  },
+  "files": [
+    {
+      "path": ".dockerignore",
+      "category": "deployment"
+    },
+    {
+      "path": ".env.example",
+      "category": "deployment"
+    },
+    {
+      "path": ".gitattributes",
+      "category": "deployment"
+    },
+    {
+      "path": ".gitignore",
+      "category": "deployment"
+    },
+    {
+      "path": "AGENTS.md",
+      "category": "documentation"
+    },
+    {
+      "path": "README.md",
+      "category": "documentation"
+    },
+    {
+      "path": "backend/app/__init__.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/analysis_types.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/decisions.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/domain.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/engine.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/evidence/validation.json",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/evidence_types.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/lab.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/main.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/metric_reporting.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/model_evidence.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/policies.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/prediction.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/results.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/robustness.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/scenarios.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/app/store.py",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/audit_model.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/audit_policies.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/audit_runtime.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/benchmark.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/export_v3.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/lock_requirements.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/pyproject.toml",
+      "category": "testing"
+    },
+    {
+      "path": "backend/requirements-dev.txt",
+      "category": "testing"
+    },
+    {
+      "path": "backend/requirements.txt",
+      "category": "runtime"
+    },
+    {
+      "path": "backend/tests/test_api.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_deep_audit.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_domain.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_engine.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_metric_reporting.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_store.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_api.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_contract.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_evidence.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_policies.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_realtime.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_robustness.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/tests/test_v3_timeline.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/v3_benchmark.py",
+      "category": "testing"
+    },
+    {
+      "path": "backend/v3_validate_model.py",
+      "category": "testing"
+    },
+    {
+      "path": "deploy/Dockerfile",
+      "category": "deployment"
+    },
+    {
+      "path": "deploy/Dockerfile.dependencies",
+      "category": "deployment"
+    },
+    {
+      "path": "docker-compose.yml",
+      "category": "deployment"
+    },
+    {
+      "path": "docs/AUDIT_HANDOFF.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/BUILD_LOG.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/DECISION_CONTRACT.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/DECISION_ROBUSTNESS.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/FINAL_REPAIR_REPORT.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/FINANCIAL_CORRECTNESS.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/HANDOFF.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/ML_AUDIT.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/PROTOTYPE_AUDIT.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/SUBMISSION_VERIFICATION.json",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/SUBMISSION_VERIFICATION.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/UNDO_V3_HANDOFF.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/V3_PLAN.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/V3_RELEASE_NOTES.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/architecture.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/deployment.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/financial-model.md",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/model-evaluation.json",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/openapi.json",
+      "category": "documentation"
+    },
+    {
+      "path": "docs/testing.md",
+      "category": "documentation"
+    },
+    {
+      "path": "frontend/e2e/repair.spec.ts",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/e2e/v3.spec.ts",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/e2e/workflows.spec.ts",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/eslint.config.js",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/index.html",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/package-lock.json",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/package.json",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/playwright.config.ts",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/scripts/audit-live.mjs",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/scripts/start-test-backend.mjs",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/scripts/v3-live.mjs",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/scripts/visual-qa.mjs",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/src/App.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/Activity.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/CashChart.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/Comparison.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/DecisionIntelligence.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/Explanation.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/Forms.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/MetricValue.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/ModelEvidence.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/components/ScenarioLab.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/hooks/useWorkspace.ts",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/lib/api.ts",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/lib/decisionContext.ts",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/lib/decisionLabels.ts",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/main.tsx",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/styles.css",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/src/types/api.d.ts",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/tests/decision-binding.test.tsx",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/fixture.json",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/lab.test.tsx",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/metric-reporting.test.tsx",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/model-evidence-fixture.json",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/setup.ts",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/ui.test.tsx",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/v3-fixture.json",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/v3.test.tsx",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tests/workspace.test.tsx",
+      "category": "testing"
+    },
+    {
+      "path": "frontend/tsconfig.json",
+      "category": "runtime"
+    },
+    {
+      "path": "frontend/vite.config.ts",
+      "category": "deployment"
+    },
+    {
+      "path": "scripts/container_smoke.py",
+      "category": "testing"
+    },
+    {
+      "path": "scripts/container_tests.py",
+      "category": "testing"
+    },
+    {
+      "path": "scripts/package_submission.py",
+      "category": "deployment"
+    },
+    {
+      "path": "scripts/test_package_submission.py",
+      "category": "testing"
+    },
+    {
+      "path": "submission-manifest.json",
+      "category": "deployment"
+    }
+  ]
+}

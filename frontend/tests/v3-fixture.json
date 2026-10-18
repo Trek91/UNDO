@@ -1,0 +1,1709 @@
+{
+  "id": "45d3da26-081e-4834-81cd-5baeb0ff77f0",
+  "generation": 1,
+  "state_version": 0,
+  "status": "ready",
+  "recommendation": "partial",
+  "actions": [
+    {
+      "action": {
+        "id": "full",
+        "label": "Pay in full",
+        "description": "Settle the proposed payment immediately.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            0,
+            6000000
+          ]
+        ],
+        "penalty_paise": 0,
+        "penalty_day": 1,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 0,
+        "contractual_late": false,
+        "reconsider_day": null,
+        "delay_paise_days": 0
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          4133333,
+          -733333,
+          -733333,
+          -466667,
+          -333333,
+          66667,
+          66667,
+          333333
+        ],
+        "shortfall_probability": 0.9666666666666667,
+        "expected_shortfall_paise": 966667,
+        "cash_deficit_probability": 0.9666666666666667,
+        "expected_peak_cash_deficit_paise": 966667,
+        "expected_minimum_paise": -866667,
+        "reserve_breach_probability": 0.9666666666666667,
+        "expected_peak_reserve_deficit_paise": 1933333,
+        "reserve_maintained_probability": 0.033333333333333326,
+        "expected_penalty_paise": 0,
+        "late_payment_probability": 0.0,
+        "expected_remaining_paise": 0,
+        "expected_total_remaining_liabilities_paise": 666667,
+        "expected_remaining_fees_paise": 0,
+        "probability_intervals": {
+          "shortfall_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "reserve_breach_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "cash_deficit_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "late_payment_probability": {
+            "lower": 0.0,
+            "upper": 0.11351339317396876,
+            "successes": 0,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          }
+        },
+        "cash_outcomes": {
+          "sampled_worst_minimum_paise": -1000000,
+          "minimum_p05_paise": -1000000,
+          "minimum_p50_paise": -1000000,
+          "minimum_p95_paise": -1000000,
+          "daily_p05_paise": [
+            4000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000
+          ],
+          "daily_p50_paise": [
+            4000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000,
+            -1000000
+          ],
+          "daily_p95_paise": [
+            4000000,
+            3000000,
+            3000000,
+            3000000,
+            3000000,
+            3000000,
+            3000000,
+            3000000
+          ],
+          "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+        }
+      },
+      "rank": 4
+    },
+    {
+      "action": {
+        "id": "partial",
+        "label": "Split payment",
+        "description": "Pay the permitted portion now; remainder on day 3.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            0,
+            3000000
+          ],
+          [
+            3,
+            3000000
+          ]
+        ],
+        "penalty_paise": 0,
+        "penalty_day": 4,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 3,
+        "contractual_late": false,
+        "reconsider_day": null,
+        "delay_paise_days": 9000000
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          7133333,
+          2266667,
+          2266667,
+          -653333,
+          -520000,
+          -120000,
+          -120000,
+          146667
+        ],
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "cash_deficit_probability": 0.9333333333333333,
+        "expected_peak_cash_deficit_paise": 1120000,
+        "expected_minimum_paise": -953333,
+        "reserve_breach_probability": 0.9333333333333333,
+        "expected_peak_reserve_deficit_paise": 2053333,
+        "reserve_maintained_probability": 0.06666666666666665,
+        "expected_penalty_paise": 186667,
+        "late_payment_probability": 0.9333333333333333,
+        "expected_remaining_paise": 666667,
+        "expected_total_remaining_liabilities_paise": 800000,
+        "expected_remaining_fees_paise": 133333,
+        "probability_intervals": {
+          "shortfall_probability": {
+            "lower": 0.0,
+            "upper": 0.11351339317396876,
+            "successes": 0,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "reserve_breach_probability": {
+            "lower": 0.7867654163738308,
+            "upper": 0.9815229762087295,
+            "successes": 28,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "cash_deficit_probability": {
+            "lower": 0.7867654163738308,
+            "upper": 0.9815229762087295,
+            "successes": 28,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "late_payment_probability": {
+            "lower": 0.7867654163738308,
+            "upper": 0.9815229762087295,
+            "successes": 28,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          }
+        },
+        "cash_outcomes": {
+          "sampled_worst_minimum_paise": -1200000,
+          "minimum_p05_paise": -1200000,
+          "minimum_p50_paise": -1200000,
+          "minimum_p95_paise": 2000000,
+          "daily_p05_paise": [
+            7000000,
+            2000000,
+            2000000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000
+          ],
+          "daily_p50_paise": [
+            7000000,
+            2000000,
+            2000000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000
+          ],
+          "daily_p95_paise": [
+            7000000,
+            6000000,
+            6000000,
+            3000000,
+            3000000,
+            3000000,
+            3000000,
+            3000000
+          ],
+          "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+        }
+      },
+      "rank": 1
+    },
+    {
+      "action": {
+        "id": "defer",
+        "label": "Defer payment",
+        "description": "Schedule settlement on day 3; contractual late fee applies.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            3,
+            6000000
+          ]
+        ],
+        "penalty_paise": 200000,
+        "penalty_day": 1,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 0,
+        "contractual_late": true,
+        "reconsider_day": null,
+        "delay_paise_days": 18000000
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          3933333,
+          -933333,
+          -933333,
+          -666667,
+          -533333,
+          -133333,
+          -133333,
+          133333
+        ],
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "cash_deficit_probability": 0.9666666666666667,
+        "expected_peak_cash_deficit_paise": 1160000,
+        "expected_minimum_paise": -1066667,
+        "reserve_breach_probability": 0.9666666666666667,
+        "expected_peak_reserve_deficit_paise": 2126667,
+        "reserve_maintained_probability": 0.033333333333333326,
+        "expected_penalty_paise": 200000,
+        "late_payment_probability": 1.0,
+        "expected_remaining_paise": 800000,
+        "expected_total_remaining_liabilities_paise": 800000,
+        "expected_remaining_fees_paise": 0,
+        "probability_intervals": {
+          "shortfall_probability": {
+            "lower": 0.0,
+            "upper": 0.11351339317396876,
+            "successes": 0,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "reserve_breach_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "cash_deficit_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "late_payment_probability": {
+            "lower": 0.8864866068260312,
+            "upper": 0.9999999999999999,
+            "successes": 30,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          }
+        },
+        "cash_outcomes": {
+          "sampled_worst_minimum_paise": -1200000,
+          "minimum_p05_paise": -1200000,
+          "minimum_p50_paise": -1200000,
+          "minimum_p95_paise": -1200000,
+          "daily_p05_paise": [
+            3800000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000
+          ],
+          "daily_p50_paise": [
+            3800000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000
+          ],
+          "daily_p95_paise": [
+            3800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000
+          ],
+          "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+        }
+      },
+      "rank": 3
+    },
+    {
+      "action": {
+        "id": "hold",
+        "label": "Hold for review",
+        "description": "Review tomorrow; original due date remains in force.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            1,
+            6000000
+          ]
+        ],
+        "penalty_paise": 200000,
+        "penalty_day": 1,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 0,
+        "contractual_late": true,
+        "reconsider_day": 1,
+        "delay_paise_days": 6000000
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          3933333,
+          -933333,
+          -933333,
+          -666667,
+          -533333,
+          -133333,
+          -133333,
+          133333
+        ],
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "cash_deficit_probability": 0.9666666666666667,
+        "expected_peak_cash_deficit_paise": 1160000,
+        "expected_minimum_paise": -1066667,
+        "reserve_breach_probability": 0.9666666666666667,
+        "expected_peak_reserve_deficit_paise": 2126667,
+        "reserve_maintained_probability": 0.033333333333333326,
+        "expected_penalty_paise": 200000,
+        "late_payment_probability": 1.0,
+        "expected_remaining_paise": 666667,
+        "expected_total_remaining_liabilities_paise": 800000,
+        "expected_remaining_fees_paise": 133333,
+        "probability_intervals": {
+          "shortfall_probability": {
+            "lower": 0.0,
+            "upper": 0.11351339317396876,
+            "successes": 0,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "reserve_breach_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "cash_deficit_probability": {
+            "lower": 0.8332960900859082,
+            "upper": 0.9940914096183874,
+            "successes": 29,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          },
+          "late_payment_probability": {
+            "lower": 0.8864866068260312,
+            "upper": 0.9999999999999999,
+            "successes": 30,
+            "trials": 30,
+            "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+          }
+        },
+        "cash_outcomes": {
+          "sampled_worst_minimum_paise": -1200000,
+          "minimum_p05_paise": -1200000,
+          "minimum_p50_paise": -1200000,
+          "minimum_p95_paise": -1200000,
+          "daily_p05_paise": [
+            3800000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000
+          ],
+          "daily_p50_paise": [
+            3800000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000,
+            -1200000
+          ],
+          "daily_p95_paise": [
+            3800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000,
+            2800000
+          ],
+          "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+        }
+      },
+      "rank": 2
+    }
+  ],
+  "snapshot": {
+    "business_id": "demo",
+    "business_name": "Morrow Studio",
+    "currency": "INR",
+    "timezone": "Asia/Kolkata",
+    "base_date": "2026-10-17",
+    "cash_paise": 10000000,
+    "reserve_paise": 1000000,
+    "generation": 1,
+    "version": 0,
+    "obligations": {
+      "supplier": {
+        "id": "supplier",
+        "label": "Evergreen Supplies",
+        "amount_paise": 6000000,
+        "paid_paise": 0,
+        "due_date": "2026-10-17",
+        "mandatory": false,
+        "terms": {
+          "allow_partial": true,
+          "minimum_partial_paise": 3000000,
+          "partial_days": 3,
+          "allow_deferral": true,
+          "defer_days": 3,
+          "late_penalty_paise": 200000
+        }
+      },
+      "operations": {
+        "id": "operations",
+        "label": "Payroll & operating costs",
+        "amount_paise": 5000000,
+        "paid_paise": 0,
+        "due_date": "2026-10-18",
+        "mandatory": true,
+        "terms": null
+      }
+    },
+    "receivables": {
+      "customer": {
+        "id": "customer",
+        "label": "Northstar Retail · INV-1042",
+        "amount_paise": 4000000,
+        "received_paise": 0,
+        "created_date": "2026-10-03",
+        "expected_date": "2026-10-18",
+        "status": "expected",
+        "historical_late_rate": 0.35,
+        "historical_delay_days": 2.0
+      }
+    },
+    "proposals": {
+      "proposal": {
+        "id": "proposal",
+        "obligation_id": "supplier",
+        "amount_paise": 6000000
+      }
+    }
+  },
+  "request": {
+    "proposal_id": "proposal",
+    "horizon_days": 7,
+    "paths": 30,
+    "seed": 20261017,
+    "action_ids": [
+      "full",
+      "partial",
+      "defer",
+      "hold"
+    ],
+    "include_robustness": true
+  },
+  "metadata": {
+    "engine_version": "counterfactual-v3",
+    "horizon_days": 7,
+    "paths": 30,
+    "seed": 20261017,
+    "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+    "scenario_digest": "08cf71d5b7e7138b",
+    "model_metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.07397396463575107,
+      "threshold": 0.5,
+      "observations": 1125.0,
+      "positive_labels": 94.0,
+      "predicted_positives": 0.0,
+      "true_positives": 0.0,
+      "true_negatives": 1031.0,
+      "false_positives": 0.0,
+      "false_negatives": 94.0,
+      "precision_defined": 0.0,
+      "recall_defined": 1.0,
+      "heldout_invoices": 120.0,
+      "training_invoices": 480.0,
+      "heldout_daily_observations": 1125.0,
+      "horizon_brier": 0.23407548600545616
+    },
+    "dataset_seed": 20261017,
+    "scenario_basis": "ml_hazard",
+    "source_state_digest": "634668ecfead866d08a98bbbab8381eaecc286af1debf9cc730fca2b8236d71b",
+    "ordering": "Mandatory deadlines, supplier commitments, then uncertain receipts; intraday risk retained.",
+    "assumptions": [
+      "Synthetic data and synthetic-data model evaluation; no real-world accuracy claim.",
+      "Shared arrival scenarios across every action; independent customer arrival draws.",
+      "Hold assumes full settlement at day-1 review; no speculative value of information.",
+      "Negative projected cash is a funding requirement, never actual settled cash.",
+      "Future funding shortfalls are risks; only affordable confirmed events alter the ledger.",
+      "Primary policy is separately disclosed. All forecast risks remain conditional; prescribed stress frequencies are not learned probabilities."
+    ]
+  },
+  "explanation": {
+    "reason": "Split payment is the primary choice under the validated known-obligation and reserve rule. Experimental ML rankings remain visible and do not silently override this policy. Hold for review, the leading experimental alternative, does not precede this action in the disclosed full/split/hold/defer rule order.",
+    "principal_metric": "expected_penalty_paise",
+    "downside": "Split payment: conditional mandatory-miss frequency 0.0%, reserve-breach frequency 93.3%; expected contractual penalties 186667 paise and remaining liabilities 800000 paise. These scenario outcomes are uncertain, not guaranteed future cash.",
+    "alternative_id": "hold",
+    "comparison": "Experimental rank compares modeled outcomes; the primary action follows the separately disclosed eligibility gate and policy.",
+    "sensitive_to_receivables": true,
+    "sensitivity_note": "At least one action has both successful and missed-obligation paths.",
+    "limitations": [
+      "Synthetic training and test data do not establish real-world predictive accuracy.",
+      "Improved outcomes over a transparent obligation-aware rule have not been established.",
+      "Hold continuation is an explicit assumption, not a promise of renegotiation.",
+      "Finite simulation paths introduce sampling error; customer shocks are not correlated."
+    ]
+  },
+  "scope": "live",
+  "decision_evidence": {
+    "primary_policy": "obligation_rule",
+    "policy_version": "obligation-reserve-rule-v1",
+    "model_gate": {
+      "eligible": false,
+      "status": "EXPERIMENTAL",
+      "primary_basis": "obligation_rule",
+      "criteria": {
+        "valid_model_and_validation_split": true,
+        "probability_beats_training_prevalence": true,
+        "heldout_decision_benefit": false,
+        "multi_seed_paired_validation": true
+      },
+      "reason": "Reliable held-out decision improvement over the obligation-aware rule has not been established. ML is an experimental comparator; known obligations and reserve rules determine the primary action.",
+      "policy_version": "evidence-gate-v3-1"
+    },
+    "policy_comparison": {
+      "policies": [
+        {
+          "id": "balance_only",
+          "label": "Balance-only",
+          "action_id": "full",
+          "status": "ready",
+          "reason": "Pay full if immediately affordable and contract-feasible; otherwise hold. Ignores future mandatory budget.",
+          "metrics": {
+            "daily_paise": [
+              4133333,
+              -733333,
+              -733333,
+              -466667,
+              -333333,
+              66667,
+              66667,
+              333333
+            ],
+            "shortfall_probability": 0.9666666666666667,
+            "expected_shortfall_paise": 966667,
+            "cash_deficit_probability": 0.9666666666666667,
+            "expected_peak_cash_deficit_paise": 966667,
+            "expected_minimum_paise": -866667,
+            "reserve_breach_probability": 0.9666666666666667,
+            "expected_peak_reserve_deficit_paise": 1933333,
+            "reserve_maintained_probability": 0.033333333333333326,
+            "expected_penalty_paise": 0,
+            "late_payment_probability": 0.0,
+            "expected_remaining_paise": 0,
+            "expected_total_remaining_liabilities_paise": 666667,
+            "expected_remaining_fees_paise": 0,
+            "probability_intervals": {
+              "shortfall_probability": {
+                "lower": 0.8332960900859082,
+                "upper": 0.9940914096183874,
+                "successes": 29,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "reserve_breach_probability": {
+                "lower": 0.8332960900859082,
+                "upper": 0.9940914096183874,
+                "successes": 29,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "cash_deficit_probability": {
+                "lower": 0.8332960900859082,
+                "upper": 0.9940914096183874,
+                "successes": 29,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "late_payment_probability": {
+                "lower": 0.0,
+                "upper": 0.11351339317396876,
+                "successes": 0,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              }
+            },
+            "cash_outcomes": {
+              "sampled_worst_minimum_paise": -1000000,
+              "minimum_p05_paise": -1000000,
+              "minimum_p50_paise": -1000000,
+              "minimum_p95_paise": -1000000,
+              "daily_p05_paise": [
+                4000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000
+              ],
+              "daily_p50_paise": [
+                4000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000,
+                -1000000
+              ],
+              "daily_p95_paise": [
+                4000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000
+              ],
+              "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+            }
+          },
+          "scenario_digest": "08cf71d5b7e7138b",
+          "contractual_feasibility_rate": 1.0
+        },
+        {
+          "id": "obligation_rule",
+          "label": "Obligation-aware rule",
+          "action_id": "partial",
+          "status": "ready",
+          "reason": "Reserve known mandatory principal through the horizon plus desired reserve; try full, permitted split, then hold/defer. If no plan preserves the soft reserve, hold if feasible.",
+          "metrics": {
+            "daily_paise": [
+              7133333,
+              2266667,
+              2266667,
+              -653333,
+              -520000,
+              -120000,
+              -120000,
+              146667
+            ],
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "cash_deficit_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1120000,
+            "expected_minimum_paise": -953333,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_reserve_deficit_paise": 2053333,
+            "reserve_maintained_probability": 0.06666666666666665,
+            "expected_penalty_paise": 186667,
+            "late_payment_probability": 0.9333333333333333,
+            "expected_remaining_paise": 666667,
+            "expected_total_remaining_liabilities_paise": 800000,
+            "expected_remaining_fees_paise": 133333,
+            "probability_intervals": {
+              "shortfall_probability": {
+                "lower": 0.0,
+                "upper": 0.11351339317396876,
+                "successes": 0,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "reserve_breach_probability": {
+                "lower": 0.7867654163738308,
+                "upper": 0.9815229762087295,
+                "successes": 28,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "cash_deficit_probability": {
+                "lower": 0.7867654163738308,
+                "upper": 0.9815229762087295,
+                "successes": 28,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "late_payment_probability": {
+                "lower": 0.7867654163738308,
+                "upper": 0.9815229762087295,
+                "successes": 28,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              }
+            },
+            "cash_outcomes": {
+              "sampled_worst_minimum_paise": -1200000,
+              "minimum_p05_paise": -1200000,
+              "minimum_p50_paise": -1200000,
+              "minimum_p95_paise": 2000000,
+              "daily_p05_paise": [
+                7000000,
+                2000000,
+                2000000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000
+              ],
+              "daily_p50_paise": [
+                7000000,
+                2000000,
+                2000000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000
+              ],
+              "daily_p95_paise": [
+                7000000,
+                6000000,
+                6000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000
+              ],
+              "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+            }
+          },
+          "scenario_digest": "08cf71d5b7e7138b",
+          "contractual_feasibility_rate": 1.0
+        },
+        {
+          "id": "ml_informed",
+          "label": "Experimental ML",
+          "action_id": "partial",
+          "status": "ready",
+          "reason": "Select by the documented lexicographic objective using forecast paths only; no access to held-out realized futures.",
+          "metrics": {
+            "daily_paise": [
+              7133333,
+              2266667,
+              2266667,
+              -653333,
+              -520000,
+              -120000,
+              -120000,
+              146667
+            ],
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "cash_deficit_probability": 0.9333333333333333,
+            "expected_peak_cash_deficit_paise": 1120000,
+            "expected_minimum_paise": -953333,
+            "reserve_breach_probability": 0.9333333333333333,
+            "expected_peak_reserve_deficit_paise": 2053333,
+            "reserve_maintained_probability": 0.06666666666666665,
+            "expected_penalty_paise": 186667,
+            "late_payment_probability": 0.9333333333333333,
+            "expected_remaining_paise": 666667,
+            "expected_total_remaining_liabilities_paise": 800000,
+            "expected_remaining_fees_paise": 133333,
+            "probability_intervals": {
+              "shortfall_probability": {
+                "lower": 0.0,
+                "upper": 0.11351339317396876,
+                "successes": 0,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "reserve_breach_probability": {
+                "lower": 0.7867654163738308,
+                "upper": 0.9815229762087295,
+                "successes": 28,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "cash_deficit_probability": {
+                "lower": 0.7867654163738308,
+                "upper": 0.9815229762087295,
+                "successes": 28,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "late_payment_probability": {
+                "lower": 0.7867654163738308,
+                "upper": 0.9815229762087295,
+                "successes": 28,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              }
+            },
+            "cash_outcomes": {
+              "sampled_worst_minimum_paise": -1200000,
+              "minimum_p05_paise": -1200000,
+              "minimum_p50_paise": -1200000,
+              "minimum_p95_paise": 2000000,
+              "daily_p05_paise": [
+                7000000,
+                2000000,
+                2000000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000
+              ],
+              "daily_p50_paise": [
+                7000000,
+                2000000,
+                2000000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000
+              ],
+              "daily_p95_paise": [
+                7000000,
+                6000000,
+                6000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000,
+                3000000
+              ],
+              "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+            }
+          },
+          "scenario_digest": "08cf71d5b7e7138b",
+          "contractual_feasibility_rate": 1.0
+        },
+        {
+          "id": "stress",
+          "label": "No-receipt stress",
+          "action_id": "hold",
+          "status": "ready",
+          "reason": "Choose under a prescribed no-receipt path; score below on the same futures as every other policy. Not optimal or risk-free.",
+          "metrics": {
+            "daily_paise": [
+              3933333,
+              -933333,
+              -933333,
+              -666667,
+              -533333,
+              -133333,
+              -133333,
+              133333
+            ],
+            "shortfall_probability": 0.0,
+            "expected_shortfall_paise": 0,
+            "cash_deficit_probability": 0.9666666666666667,
+            "expected_peak_cash_deficit_paise": 1160000,
+            "expected_minimum_paise": -1066667,
+            "reserve_breach_probability": 0.9666666666666667,
+            "expected_peak_reserve_deficit_paise": 2126667,
+            "reserve_maintained_probability": 0.033333333333333326,
+            "expected_penalty_paise": 200000,
+            "late_payment_probability": 1.0,
+            "expected_remaining_paise": 666667,
+            "expected_total_remaining_liabilities_paise": 800000,
+            "expected_remaining_fees_paise": 133333,
+            "probability_intervals": {
+              "shortfall_probability": {
+                "lower": 0.0,
+                "upper": 0.11351339317396876,
+                "successes": 0,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "reserve_breach_probability": {
+                "lower": 0.8332960900859082,
+                "upper": 0.9940914096183874,
+                "successes": 29,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "cash_deficit_probability": {
+                "lower": 0.8332960900859082,
+                "upper": 0.9940914096183874,
+                "successes": 29,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              },
+              "late_payment_probability": {
+                "lower": 0.8864866068260312,
+                "upper": 0.9999999999999999,
+                "successes": 30,
+                "trials": 30,
+                "method": "Wilson 95%; Monte Carlo sampling only, conditional on the scenario assumptions."
+              }
+            },
+            "cash_outcomes": {
+              "sampled_worst_minimum_paise": -1200000,
+              "minimum_p05_paise": -1200000,
+              "minimum_p50_paise": -1200000,
+              "minimum_p95_paise": -1200000,
+              "daily_p05_paise": [
+                3800000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000
+              ],
+              "daily_p50_paise": [
+                3800000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000,
+                -1200000
+              ],
+              "daily_p95_paise": [
+                3800000,
+                2800000,
+                2800000,
+                2800000,
+                2800000,
+                2800000,
+                2800000,
+                2800000
+              ],
+              "method": "Nearest-rank empirical quantiles of simulated net funding; not guaranteed future cash."
+            }
+          },
+          "scenario_digest": "08cf71d5b7e7138b",
+          "contractual_feasibility_rate": 1.0
+        }
+      ],
+      "scenario_digest": "08cf71d5b7e7138b",
+      "outcome_basis": "ml_hazard",
+      "conclusion": "no_difference",
+      "differences": {
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "expected_penalty_paise": 0,
+        "reserve_breach_probability": 0.0,
+        "expected_peak_cash_deficit_paise": 0,
+        "expected_peak_reserve_deficit_paise": 0,
+        "expected_remaining_paise": 0
+      },
+      "interpretation": "Paired financial outcomes, ML minus rule; negative risk/cost differences favor ML. Mixed directions are tradeoffs, not a fabricated composite score.",
+      "limitations": [
+        "Current planning simulations are conditional on assumptions and do not establish held-out or real-world decision improvement.",
+        "Contractual feasibility is at decision time, not a guarantee of future funding.",
+        "Policy choices never receive the realized future paths used for scoring in a held-out comparison."
+      ]
+    },
+    "known_mandatory_budget_paise": 5000000,
+    "desired_reserve_paise": 1000000,
+    "primary_reason": "Split payment is the primary choice under the validated known-obligation and reserve rule. Experimental ML rankings remain visible and do not silently override this policy. Hold for review, the leading experimental alternative, does not precede this action in the disclosed full/split/hold/defer rule order.",
+    "forecast_basis": "ml_hazard",
+    "reevaluate_when": [
+      "A confirmed receipt, new expense, contractual change or reserve change requires reevaluation.",
+      "Tested unexpected_expense_paise switch between 1000000 and 1000001 paise.",
+      "Tested proposed_amount_paise switch between 4000000 and 4000001 paise.",
+      "Tested proposed_amount_paise switch between 6000000 and 10000000 paise.",
+      "Tested reserve_paise switch between 2000000 and 3000000 paise."
+    ],
+    "important_dimensions": [
+      "proposed_amount_paise",
+      "unexpected_expense_paise",
+      "reserve_paise"
+    ]
+  },
+  "robustness": {
+    "source_state_digest": "634668ecfead866d08a98bbbab8381eaecc286af1debf9cc730fca2b8236d71b",
+    "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+    "seed": 20261017,
+    "horizon_days": 7,
+    "grid_paths": 30,
+    "baseline_paths": 30,
+    "base_recommendation": "partial",
+    "evaluated_cases": 39,
+    "stable_cases": 31,
+    "stability_share": 0.7948717948717948,
+    "cases": [
+      {
+        "dimension": "receipt_delay_days",
+        "value": 0,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_delay_days",
+        "value": 2,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_delay_days",
+        "value": 5,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_delay_days",
+        "value": 10,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 193333,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_probability",
+        "value": 0,
+        "unit": "probability",
+        "recommendation": "partial",
+        "experimental_recommendation": "hold",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_probability",
+        "value": 0.25,
+        "unit": "probability",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 173333,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_probability",
+        "value": 0.5,
+        "unit": "probability",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 120000,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_probability",
+        "value": 0.75,
+        "unit": "probability",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 46667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "receipt_probability",
+        "value": 1,
+        "unit": "probability",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 0,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "unexpected_expense_paise",
+        "value": 0,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "unexpected_expense_paise",
+        "value": 1000000,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "unexpected_expense_paise",
+        "value": 1000001,
+        "unit": "paise",
+        "recommendation": "hold",
+        "experimental_recommendation": "partial",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "changed"
+      },
+      {
+        "dimension": "unexpected_expense_paise",
+        "value": 2000000,
+        "unit": "paise",
+        "recommendation": "hold",
+        "experimental_recommendation": "partial",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "changed"
+      },
+      {
+        "dimension": "mandatory_due_days",
+        "value": 0,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [
+          "Pay in full: Immediate payment exceeds settled cash after prior mandatory deadlines."
+        ],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "mandatory_due_days",
+        "value": 1,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "mandatory_due_days",
+        "value": 3,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "mandatory_due_days",
+        "value": 7,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "full",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": true,
+        "shortfall_probability": 0.7333333333333333,
+        "expected_penalty_paise": 0,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "value": 3000000,
+        "unit": "paise",
+        "recommendation": "full",
+        "experimental_recommendation": "full",
+        "changed": true,
+        "previous_action_infeasible": true,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 0,
+        "constraints": [
+          "Split payment: The contract does not permit this partial-payment arrangement."
+        ],
+        "status": "changed"
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "value": 4000000,
+        "unit": "paise",
+        "recommendation": "full",
+        "experimental_recommendation": "full",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 0,
+        "constraints": [],
+        "status": "changed"
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "value": 4000001,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 0,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "value": 6000000,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "value": 10000000,
+        "unit": "paise",
+        "recommendation": "hold",
+        "experimental_recommendation": "hold",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "changed"
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "value": 10000001,
+        "unit": "paise",
+        "recommendation": "hold",
+        "experimental_recommendation": "hold",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [
+          "Pay in full: Immediate payment exceeds settled cash after prior mandatory deadlines."
+        ],
+        "status": "changed"
+      },
+      {
+        "dimension": "supplier_due_days",
+        "value": -1,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "supplier_due_days",
+        "value": 0,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "supplier_due_days",
+        "value": 1,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 173333,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "supplier_due_days",
+        "value": 3,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 146667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "reserve_paise",
+        "value": 0,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "reserve_paise",
+        "value": 1000000,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "reserve_paise",
+        "value": 2000000,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "reserve_paise",
+        "value": 3000000,
+        "unit": "paise",
+        "recommendation": "hold",
+        "experimental_recommendation": "partial",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "changed"
+      },
+      {
+        "dimension": "reserve_paise",
+        "value": 5000000,
+        "unit": "paise",
+        "recommendation": "hold",
+        "experimental_recommendation": "partial",
+        "changed": true,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 200000,
+        "constraints": [],
+        "status": "changed"
+      },
+      {
+        "dimension": "partial_days",
+        "value": 1,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 193333,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "partial_days",
+        "value": 3,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "partial_days",
+        "value": 5,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 166667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "partial_days",
+        "value": 7,
+        "unit": "days",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 146667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "penalty_paise",
+        "value": 0,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 0,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "penalty_paise",
+        "value": 200000,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 186667,
+        "constraints": [],
+        "status": "unchanged"
+      },
+      {
+        "dimension": "penalty_paise",
+        "value": 500000,
+        "unit": "paise",
+        "recommendation": "partial",
+        "experimental_recommendation": "partial",
+        "changed": false,
+        "previous_action_infeasible": false,
+        "new_mandatory_shortfall": false,
+        "shortfall_probability": 0.0,
+        "expected_penalty_paise": 466667,
+        "constraints": [],
+        "status": "unchanged"
+      }
+    ],
+    "tipping_points": [
+      {
+        "dimension": "unexpected_expense_paise",
+        "lower_value": 1000000,
+        "upper_value": 1000001,
+        "before_action": "partial",
+        "after_action": "hold",
+        "unit": "paise",
+        "method": "Adjacent tested grid points; boundary is bracketed, not an exact or guaranteed threshold."
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "lower_value": 4000000,
+        "upper_value": 4000001,
+        "before_action": "full",
+        "after_action": "partial",
+        "unit": "paise",
+        "method": "Adjacent tested grid points; boundary is bracketed, not an exact or guaranteed threshold."
+      },
+      {
+        "dimension": "proposed_amount_paise",
+        "lower_value": 6000000,
+        "upper_value": 10000000,
+        "before_action": "partial",
+        "after_action": "hold",
+        "unit": "paise",
+        "method": "Adjacent tested grid points; boundary is bracketed, not an exact or guaranteed threshold."
+      },
+      {
+        "dimension": "reserve_paise",
+        "lower_value": 2000000,
+        "upper_value": 3000000,
+        "before_action": "partial",
+        "after_action": "hold",
+        "unit": "paise",
+        "method": "Adjacent tested grid points; boundary is bracketed, not an exact or guaranteed threshold."
+      }
+    ],
+    "skipped_dimensions": [],
+    "experimental_seed_recommendations": [
+      "partial",
+      "partial",
+      "partial"
+    ],
+    "sampling_seeds": [
+      20261017,
+      20261018,
+      20261019
+    ],
+    "sampling_status": "consistent-limited-check",
+    "ranking_intervals_overlap": true,
+    "method": "Bounded one-factor grid, common seed and customer uniforms; no monotonicity or joint likelihood assumed.",
+    "limitations": [
+      "An unweighted share of tested cases is sensitivity, not model confidence or a probability of being right.",
+      "Three finite-path seed replicates can reveal instability but cannot prove a stable true ranking.",
+      "Wilson intervals describe conditional Monte Carlo sampling, not model uncertainty or real-world calibration.",
+      "Receipt-probability experiments prescribe a one-time arrival on the expected day clipped to the horizon.",
+      "No switch means no crossing found in this grid; it does not establish global robustness."
+    ]
+  },
+  "experiment_changes": {},
+  "timeline": [
+    {
+      "kind": "supplier",
+      "label": "Evergreen Supplies",
+      "day": 0,
+      "amount_paise": 6000000
+    },
+    {
+      "kind": "mandatory",
+      "label": "Payroll & operating costs",
+      "day": 1,
+      "amount_paise": 5000000
+    },
+    {
+      "kind": "uncertain_receipt",
+      "label": "Northstar Retail · INV-1042",
+      "day": 1,
+      "amount_paise": 4000000
+    }
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "id": "98f58c69-8aea-4d2c-8203-0598f4c8969e",
+  "generation": 1,
+  "state_version": 0,
+  "status": "ready",
+  "recommendation": "partial",
+  "actions": [
+    {
+      "action": {
+        "id": "full",
+        "label": "Pay in full",
+        "description": "Settle the proposed payment immediately.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            0,
+            6000000
+          ]
+        ],
+        "penalty_paise": 0,
+        "penalty_day": 1,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 0,
+        "contractual_late": false,
+        "reconsider_day": null,
+        "delay_paise_days": 0
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          4160000,
+          -640000,
+          -480000,
+          -320000,
+          -160000,
+          280000,
+          520000,
+          880000
+        ],
+        "shortfall_probability": 0.96,
+        "expected_shortfall_paise": 960000,
+        "cash_deficit_probability": 0.96,
+        "expected_peak_cash_deficit_paise": 960000,
+        "expected_minimum_paise": -840000,
+        "reserve_breach_probability": 0.96,
+        "expected_peak_reserve_deficit_paise": 1920000,
+        "reserve_maintained_probability": 0.040000000000000036,
+        "expected_penalty_paise": 0,
+        "late_payment_probability": 0.0,
+        "expected_remaining_paise": 0
+      },
+      "rank": 4
+    },
+    {
+      "action": {
+        "id": "partial",
+        "label": "Split payment",
+        "description": "Pay the permitted portion now; remainder on day 3.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            0,
+            3000000
+          ],
+          [
+            3,
+            3000000
+          ]
+        ],
+        "penalty_paise": 0,
+        "penalty_day": 4,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 3,
+        "contractual_late": false,
+        "reconsider_day": null,
+        "delay_paise_days": 9000000
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          7160000,
+          2360000,
+          2520000,
+          -320000,
+          -334000,
+          106000,
+          346000,
+          706000
+        ],
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "cash_deficit_probability": 0.87,
+        "expected_peak_cash_deficit_paise": 1036000,
+        "expected_minimum_paise": -736000,
+        "reserve_breach_probability": 0.87,
+        "expected_peak_reserve_deficit_paise": 1906000,
+        "reserve_maintained_probability": 0.13,
+        "expected_penalty_paise": 174000,
+        "late_payment_probability": 0.87,
+        "expected_remaining_paise": 530000
+      },
+      "rank": 1
+    },
+    {
+      "action": {
+        "id": "defer",
+        "label": "Defer payment",
+        "description": "Schedule settlement on day 3; contractual late fee applies.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            3,
+            6000000
+          ]
+        ],
+        "penalty_paise": 200000,
+        "penalty_day": 1,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 0,
+        "contractual_late": true,
+        "reconsider_day": null,
+        "delay_paise_days": 18000000
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          10160000,
+          5160000,
+          5320000,
+          -520000,
+          -360000,
+          80000,
+          320000,
+          680000
+        ],
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "cash_deficit_probability": 0.87,
+        "expected_peak_cash_deficit_paise": 1044000,
+        "expected_minimum_paise": -680000,
+        "reserve_breach_probability": 0.87,
+        "expected_peak_reserve_deficit_paise": 1914000,
+        "reserve_maintained_probability": 0.13,
+        "expected_penalty_paise": 200000,
+        "late_payment_probability": 1.0,
+        "expected_remaining_paise": 636000
+      },
+      "rank": 2
+    },
+    {
+      "action": {
+        "id": "hold",
+        "label": "Hold for review",
+        "description": "Review tomorrow; original due date remains in force.",
+        "valid": true,
+        "invalid_reason": null,
+        "payments": [
+          [
+            1,
+            6000000
+          ]
+        ],
+        "penalty_paise": 200000,
+        "penalty_day": 1,
+        "late_fee_paise": 200000,
+        "contractual_due_day": 0,
+        "contractual_late": true,
+        "reconsider_day": 1,
+        "delay_paise_days": 6000000
+      },
+      "valid": true,
+      "metrics": {
+        "daily_paise": [
+          10160000,
+          -840000,
+          -680000,
+          -520000,
+          -360000,
+          80000,
+          320000,
+          680000
+        ],
+        "shortfall_probability": 0.0,
+        "expected_shortfall_paise": 0,
+        "cash_deficit_probability": 0.96,
+        "expected_peak_cash_deficit_paise": 1152000,
+        "expected_minimum_paise": -1040000,
+        "reserve_breach_probability": 0.96,
+        "expected_peak_reserve_deficit_paise": 2112000,
+        "reserve_maintained_probability": 0.040000000000000036,
+        "expected_penalty_paise": 200000,
+        "late_payment_probability": 1.0,
+        "expected_remaining_paise": 530000
+      },
+      "rank": 3
+    }
+  ],
+  "snapshot": {
+    "business_id": "demo",
+    "business_name": "Morrow Studio",
+    "currency": "INR",
+    "timezone": "Asia/Kolkata",
+    "base_date": "2026-10-17",
+    "cash_paise": 10000000,
+    "reserve_paise": 1000000,
+    "generation": 1,
+    "version": 0,
+    "obligations": {
+      "supplier": {
+        "id": "supplier",
+        "label": "Evergreen Supplies",
+        "amount_paise": 6000000,
+        "paid_paise": 0,
+        "due_date": "2026-10-17",
+        "mandatory": false,
+        "terms": {
+          "allow_partial": true,
+          "minimum_partial_paise": 3000000,
+          "partial_days": 3,
+          "allow_deferral": true,
+          "defer_days": 3,
+          "late_penalty_paise": 200000
+        }
+      },
+      "operations": {
+        "id": "operations",
+        "label": "Payroll & operating costs",
+        "amount_paise": 5000000,
+        "paid_paise": 0,
+        "due_date": "2026-10-18",
+        "mandatory": true,
+        "terms": null
+      }
+    },
+    "receivables": {
+      "customer": {
+        "id": "customer",
+        "label": "Northstar Retail · INV-1042",
+        "amount_paise": 4000000,
+        "received_paise": 0,
+        "created_date": "2026-10-03",
+        "expected_date": "2026-10-18",
+        "status": "expected",
+        "historical_late_rate": 0.35,
+        "historical_delay_days": 2.0
+      }
+    },
+    "proposals": {
+      "proposal": {
+        "id": "proposal",
+        "obligation_id": "supplier",
+        "amount_paise": 6000000
+      }
+    }
+  },
+  "request": {
+    "proposal_id": "proposal",
+    "horizon_days": 7,
+    "paths": 100,
+    "seed": 20261017,
+    "action_ids": [
+      "full",
+      "partial",
+      "defer",
+      "hold"
+    ]
+  },
+  "metadata": {
+    "horizon_days": 7,
+    "paths": 100,
+    "seed": 20261017,
+    "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+    "scenario_digest": "00b8f4add9eb0a76",
+    "model_metrics": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "brier": 0.07397396463575107,
+      "heldout_invoices": 120.0,
+      "training_invoices": 480.0,
+      "heldout_daily_observations": 1125.0,
+      "horizon_brier": 0.23407548600545616
+    },
+    "dataset_seed": 20261017,
+    "ordering": "Mandatory deadlines, supplier commitments, then uncertain receipts; intraday risk retained.",
+    "assumptions": [
+      "Synthetic data and synthetic-data model evaluation; no real-world accuracy claim.",
+      "Shared arrival scenarios across every action; independent customer arrival draws.",
+      "Hold assumes full settlement at day-1 review; no speculative value of information.",
+      "Negative projected cash is a funding requirement, never actual settled cash.",
+      "Future funding shortfalls are risks; only affordable confirmed events alter the ledger."
+    ]
+  },
+  "explanation": {
+    "reason": "Split payment ranks first under the documented risk-first objective.",
+    "principal_metric": "expected_penalty_paise",
+    "downside": "This action can still miss mandatory obligations or breach the desired reserve.",
+    "alternative_id": "defer",
+    "comparison": "Compared with Defer payment, the first ranking distinction is expected_penalty_paise.",
+    "sensitive_to_receivables": true,
+    "sensitivity_note": "At least one action has both successful and missed-obligation paths.",
+    "limitations": [
+      "Synthetic training and test data do not establish real-world predictive accuracy.",
+      "Hold continuation is an explicit assumption, not a promise of renegotiation.",
+      "Finite simulation paths introduce sampling error; customer shocks are not correlated."
+    ]
+  }
+}

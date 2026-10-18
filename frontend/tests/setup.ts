@@ -1,0 +1,5 @@
+import '@testing-library/jest-dom/vitest'
+import { cleanup } from '@testing-library/react'
+afterEach(cleanup)
+class ResizeObserverMock { observe() {} unobserve() {} disconnect() {} }
+globalThis.ResizeObserver = ResizeObserverMock

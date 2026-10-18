@@ -1,0 +1,9 @@
+.git
+.venv
+.runtime
+**/node_modules
+**/__pycache__
+**/.pytest_cache
+data
+**/test-results
+**/playwright-report

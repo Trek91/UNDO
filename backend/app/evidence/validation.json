@@ -1,0 +1,196 @@
+{
+  "protocol": "v3-heldout-paired-120x3-seeds-100-paths; 1000 invoice-cluster bootstrap replicates",
+  "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+  "weights_digest": "43edd8ab05b40994a52920bf924b69a5031f90031788a6438d0bd6586546dcdc",
+  "source_hashes": {
+    "engine.py": "e9d683bba3caf9e07c6dbe82ce444887f331867ab91cf55831cc567d43fa1a7d",
+    "prediction.py": "df597fc29dafd6f7b44d51c5a5fcd2cdd854578de1399897aadd6da95d509942",
+    "policies.py": "6858031d2acb76e28492bbf062da31b5ec6177e1f684234f804fad3df0021f24"
+  },
+  "dataset_seed": 20261017,
+  "heldout_invoices": 120,
+  "paths_per_decision": 100,
+  "seed_results": [
+    {
+      "seed": 20261017,
+      "policies": {
+        "balance_only": {
+          "shortfall_probability": 0.9583333333333334,
+          "expected_shortfall_paise": 958333,
+          "expected_penalty_paise": 0,
+          "reserve_breach_probability": 0.9583333333333334,
+          "expected_peak_cash_deficit_paise": 958333,
+          "expected_peak_reserve_deficit_paise": 1916667,
+          "expected_remaining_paise": 0
+        },
+        "obligation_rule": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 186667,
+          "reserve_breach_probability": 0.9333333333333333,
+          "expected_peak_cash_deficit_paise": 1117298,
+          "expected_peak_reserve_deficit_paise": 2050632,
+          "expected_remaining_paise": 574334
+        },
+        "ml_informed": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 186667,
+          "reserve_breach_probability": 0.9333333333333333,
+          "expected_peak_cash_deficit_paise": 1120000,
+          "expected_peak_reserve_deficit_paise": 2053333,
+          "expected_remaining_paise": 574334
+        },
+        "stress": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 200000,
+          "reserve_breach_probability": 0.9583333333333334,
+          "expected_peak_cash_deficit_paise": 1150000,
+          "expected_peak_reserve_deficit_paise": 2108333,
+          "expected_remaining_paise": 574334
+        }
+      },
+      "choices": {
+        "balance_only": {
+          "full": 120
+        },
+        "obligation_rule": {
+          "partial": 120
+        },
+        "ml_informed": {
+          "partial": 109,
+          "hold": 11
+        },
+        "stress": {
+          "hold": 120
+        }
+      }
+    },
+    {
+      "seed": 20261034,
+      "policies": {
+        "balance_only": {
+          "shortfall_probability": 0.9583333333333334,
+          "expected_shortfall_paise": 958333,
+          "expected_penalty_paise": 0,
+          "reserve_breach_probability": 0.9583333333333334,
+          "expected_peak_cash_deficit_paise": 958333,
+          "expected_peak_reserve_deficit_paise": 1916667,
+          "expected_remaining_paise": 0
+        },
+        "obligation_rule": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 186667,
+          "reserve_breach_probability": 0.9333333333333333,
+          "expected_peak_cash_deficit_paise": 1117298,
+          "expected_peak_reserve_deficit_paise": 2050632,
+          "expected_remaining_paise": 574334
+        },
+        "ml_informed": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 186667,
+          "reserve_breach_probability": 0.9333333333333333,
+          "expected_peak_cash_deficit_paise": 1120000,
+          "expected_peak_reserve_deficit_paise": 2053333,
+          "expected_remaining_paise": 574334
+        },
+        "stress": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 200000,
+          "reserve_breach_probability": 0.9583333333333334,
+          "expected_peak_cash_deficit_paise": 1150000,
+          "expected_peak_reserve_deficit_paise": 2108333,
+          "expected_remaining_paise": 574334
+        }
+      },
+      "choices": {
+        "balance_only": {
+          "full": 120
+        },
+        "obligation_rule": {
+          "partial": 120
+        },
+        "ml_informed": {
+          "partial": 109,
+          "hold": 11
+        },
+        "stress": {
+          "hold": 120
+        }
+      }
+    },
+    {
+      "seed": 20261048,
+      "policies": {
+        "balance_only": {
+          "shortfall_probability": 0.9583333333333334,
+          "expected_shortfall_paise": 958333,
+          "expected_penalty_paise": 0,
+          "reserve_breach_probability": 0.9583333333333334,
+          "expected_peak_cash_deficit_paise": 958333,
+          "expected_peak_reserve_deficit_paise": 1916667,
+          "expected_remaining_paise": 0
+        },
+        "obligation_rule": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 186667,
+          "reserve_breach_probability": 0.9333333333333333,
+          "expected_peak_cash_deficit_paise": 1117298,
+          "expected_peak_reserve_deficit_paise": 2050632,
+          "expected_remaining_paise": 574334
+        },
+        "ml_informed": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 186667,
+          "reserve_breach_probability": 0.9333333333333333,
+          "expected_peak_cash_deficit_paise": 1120000,
+          "expected_peak_reserve_deficit_paise": 2053333,
+          "expected_remaining_paise": 574334
+        },
+        "stress": {
+          "shortfall_probability": 0.0,
+          "expected_shortfall_paise": 0,
+          "expected_penalty_paise": 200000,
+          "reserve_breach_probability": 0.9583333333333334,
+          "expected_peak_cash_deficit_paise": 1150000,
+          "expected_peak_reserve_deficit_paise": 2108333,
+          "expected_remaining_paise": 574334
+        }
+      },
+      "choices": {
+        "balance_only": {
+          "full": 120
+        },
+        "obligation_rule": {
+          "partial": 120
+        },
+        "ml_informed": {
+          "partial": 109,
+          "hold": 11
+        },
+        "stress": {
+          "hold": 120
+        }
+      }
+    }
+  ],
+  "paired_penalty_benefit_paise": 0,
+  "paired_penalty_benefit_ci95": [
+    0,
+    0
+  ],
+  "decision_advantage": false,
+  "conclusion": "No reliable incremental benefit over the obligation-aware rule established on this held-out protocol.",
+  "assumptions": [
+    "Original untouched held-out invoices and actual synthetic future per invoice; original fixed model.",
+    "Policies choose using prediction/known facts only; realized futures are supplied for scoring afterward.",
+    "Invoice-cluster resampling preserves dependence among repeated seed choices; monetary means round half-even.",
+    "Synthetic evidence only. Three Monte Carlo seeds are not three independent real-world cohorts."
+  ]
+}

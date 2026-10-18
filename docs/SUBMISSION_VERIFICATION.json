@@ -1,0 +1,425 @@
+{
+  "status": "PASS",
+  "readiness": "READY WITH DOCUMENTED LIMITATIONS",
+  "verified_at_utc": "2026-10-18T01:48:12.326161+00:00",
+  "archive": {
+    "path": "UNDO-V3-SUBMISSION.zip",
+    "sha256": "ba53b3879d4db24c7fd5e327d244b30a73a7d79db7215e304e49778561b53187",
+    "bytes": 299069,
+    "integrity": {
+      "status": "PASS",
+      "archive": "UNDO-V3-SUBMISSION.zip",
+      "sha256": "ba53b3879d4db24c7fd5e327d244b30a73a7d79db7215e304e49778561b53187",
+      "files": 115,
+      "content_hashes_verified": 114,
+      "crc": "PASS",
+      "exclusions": "PASS"
+    },
+    "current_and_extracted_bytes_match": true,
+    "deterministic_rebuild_from_extraction": "PASS"
+  },
+  "clean_extraction": {
+    "archive_sha256": "ba53b3879d4db24c7fd5e327d244b30a73a7d79db7215e304e49778561b53187",
+    "extracted_to": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg",
+    "external_prerequisites": {
+      "base_python": "C:/Users/<local-user>\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+      "node": "PATH Node24.12/npm",
+      "docker": "PATH Docker Engine/Buildx",
+      "browser": "installed Chrome/Edge or Playwright"
+    },
+    "checks": [
+      {
+        "check": "venv",
+        "command": [
+          "uv",
+          "venv",
+          "--python",
+          "C:/Users/<local-user>\\AppData\\Roaming\\uv\\python\\cpython-3.12-windows-x86_64-none\\python.exe",
+          "--seed",
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg",
+        "exit_code": 0,
+        "seconds": 2.03,
+        "status": "PASS"
+      },
+      {
+        "check": "pip-install",
+        "command": [
+          "uv",
+          "pip",
+          "install",
+          "--python",
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "-r",
+          "requirements-dev.txt"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\backend",
+        "exit_code": 0,
+        "seconds": 5.97,
+        "status": "PASS"
+      },
+      {
+        "check": "npm-ci",
+        "command": [
+          "npm.cmd",
+          "ci",
+          "--prefer-offline",
+          "--no-audit"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 24.09,
+        "status": "PASS"
+      },
+      {
+        "check": "backend",
+        "command": [
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pytest",
+          "-q"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\backend",
+        "exit_code": 0,
+        "seconds": 26.67,
+        "status": "PASS"
+      },
+      {
+        "check": "ruff",
+        "command": [
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "-m",
+          "ruff",
+          "check",
+          "app",
+          "tests",
+          "benchmark.py"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\backend",
+        "exit_code": 0,
+        "seconds": 0.48,
+        "status": "PASS"
+      },
+      {
+        "check": "mypy",
+        "command": [
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "-m",
+          "mypy",
+          "app"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\backend",
+        "exit_code": 0,
+        "seconds": 17.77,
+        "status": "PASS"
+      },
+      {
+        "check": "frontend",
+        "command": [
+          "npm.cmd",
+          "test"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 5.41,
+        "status": "PASS"
+      },
+      {
+        "check": "typecheck",
+        "command": [
+          "npm.cmd",
+          "run",
+          "typecheck"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 4.42,
+        "status": "PASS"
+      },
+      {
+        "check": "lint",
+        "command": [
+          "npm.cmd",
+          "run",
+          "lint"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 3.81,
+        "status": "PASS"
+      },
+      {
+        "check": "build",
+        "command": [
+          "npm.cmd",
+          "run",
+          "build"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 5.08,
+        "status": "PASS"
+      },
+      {
+        "check": "browser",
+        "command": [
+          "npm.cmd",
+          "run",
+          "e2e"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 87.09,
+        "status": "PASS"
+      },
+      {
+        "check": "npm-audit",
+        "command": [
+          "npm.cmd",
+          "audit"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\frontend",
+        "exit_code": 0,
+        "seconds": 2.59,
+        "status": "PASS"
+      },
+      {
+        "check": "pip-audit",
+        "command": [
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "-m",
+          "pip_audit",
+          "-r",
+          "requirements.txt",
+          "--no-deps",
+          "--disable-pip"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\backend",
+        "exit_code": 0,
+        "seconds": 6.45,
+        "status": "PASS"
+      },
+      {
+        "check": "package-tests",
+        "command": [
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "scripts/test_package_submission.py"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg",
+        "exit_code": 0,
+        "seconds": 0.83,
+        "status": "PASS"
+      },
+      {
+        "check": "archive-integrity",
+        "command": [
+          "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg\\.venv\\Scripts\\python.exe",
+          "scripts/package_submission.py",
+          "--verify",
+          "<project-root>\\dist\\UNDO-V3-SUBMISSION.zip"
+        ],
+        "cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg",
+        "exit_code": 0,
+        "seconds": 0.42,
+        "status": "PASS"
+      }
+    ]
+  },
+  "counts": {
+    "backend": 97,
+    "frontend": 27,
+    "browser": 21,
+    "packaging": 3,
+    "native_container_backend": 97,
+    "emulated_s390x_container_backend": 97
+  },
+  "architectures": {
+    "native": {
+      "architecture": "x86_64",
+      "python": "3.12.12",
+      "pydantic": "2.11.7",
+      "pydantic_core": "2.33.2",
+      "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+      "weights": [
+        -2.39720224225,
+        -0.22482199438,
+        0.0642083154,
+        0.807147695454,
+        -0.607638909143,
+        -0.205111281433
+      ],
+      "engine_version": "counterfactual-v3",
+      "static_hashes": {
+        "index.html": "859309b497e40eb4e36beb2e0016a9bdb14e62e90a202327766bb7bb905d92d4",
+        "assets/index-Kly-6qIP.css": "ec573d17767d7a1f5f5645eab2d10562135a60abab771b2a87222a850fdb20ff",
+        "assets/index-BS8qK2ck.js": "201f5c08dcee6ad30a4c215299a47974c86cbbb4dcb46297ff36b565dd4ba318",
+        "assets/CashChart-Ce0fOa0f.js": "76bb4ed3245582b71568fac640922f6e88dabdc0f62bc280c2295bd2283ac8bd"
+      },
+      "source_hashes": {
+        "scenarios.py": "75e171d7d861bf178609a6dc840fc2ec5e02ed2a570690f41bc69271e8f2f0ea",
+        "engine.py": "e9d683bba3caf9e07c6dbe82ce444887f331867ab91cf55831cc567d43fa1a7d",
+        "robustness.py": "b73563a04941282da0bda0878cf6fe46c2fb103dbc31c76fd6ac6df8522113bd",
+        "store.py": "9bdf7d4a47731b2e51913b724d5de96372b8b8062cd33f06a694d188a659f80f",
+        "policies.py": "6858031d2acb76e28492bbf062da31b5ec6177e1f684234f804fad3df0021f24",
+        "prediction.py": "df597fc29dafd6f7b44d51c5a5fcd2cdd854578de1399897aadd6da95d509942",
+        "evidence_types.py": "2521a19cc2c6905b5bab16f3b0e014d3021c7757d0f75634858717c571490c3a",
+        "decisions.py": "b45459e85af26d6ef211d070b3ea84057c73567ca5d10b926500c1d1125046e6",
+        "metric_reporting.py": "522e2cf7f70dd91765b0ca2490be933c2f57a561de9a74408b92f14b6c078e14",
+        "domain.py": "9dd4cc19a4cf46da8cfc584fb16d56df501f2fdfaea086fde97955291e1dc1b7",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model_evidence.py": "f9238ea82e9f60c77d4b6f9ef59463061192388076923aa23c41a9d633f25479",
+        "analysis_types.py": "c26a8bd84c6d698269f4b4fcedaf6c4f1bf1ac908879156be3ec06eead97b8e5",
+        "main.py": "46830944a0c6b6eac3313db4c5ef214de060873e49b8d164a8c96bc8d750c19a",
+        "results.py": "306059c73ac0d5ef4aea37428e586430ee371ec95942f774382172a1d1088ca6",
+        "lab.py": "8c9d5e90b997276f62c60f06c9334baf3fb73cc78c9fd386897df499fbb58e43"
+      },
+      "pip_check": "No broken requirements found.",
+      "image": "sha256:da1d7b2558afd5e0ade443dd4582c2269591ad95e5de014644f5894959e452ab",
+      "status": "PASS",
+      "container": "undo-submission-04079ba6-undo-1",
+      "volume": "undo-submission-04079ba6_undo_data",
+      "port": 8085,
+      "smoke": "PASS",
+      "restart": "PASS",
+      "backend_tests": 97,
+      "backend_test_status": "PASS",
+      "build_command": [
+        "docker",
+        "buildx",
+        "build",
+        "--platform",
+        "linux/amd64",
+        "-f",
+        "deploy/Dockerfile",
+        "-t",
+        "undo:submission-native",
+        "--load",
+        "."
+      ],
+      "build_cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg",
+      "build_status": "PASS"
+    },
+    "s390x": {
+      "architecture": "s390x",
+      "python": "3.12.12",
+      "pydantic": "2.11.7",
+      "pydantic_core": "2.33.2",
+      "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+      "weights": [
+        -2.39720224225,
+        -0.22482199438,
+        0.0642083154,
+        0.807147695454,
+        -0.607638909143,
+        -0.205111281433
+      ],
+      "engine_version": "counterfactual-v3",
+      "static_hashes": {
+        "index.html": "859309b497e40eb4e36beb2e0016a9bdb14e62e90a202327766bb7bb905d92d4",
+        "assets/index-Kly-6qIP.css": "ec573d17767d7a1f5f5645eab2d10562135a60abab771b2a87222a850fdb20ff",
+        "assets/index-BS8qK2ck.js": "201f5c08dcee6ad30a4c215299a47974c86cbbb4dcb46297ff36b565dd4ba318",
+        "assets/CashChart-Ce0fOa0f.js": "76bb4ed3245582b71568fac640922f6e88dabdc0f62bc280c2295bd2283ac8bd"
+      },
+      "source_hashes": {
+        "scenarios.py": "75e171d7d861bf178609a6dc840fc2ec5e02ed2a570690f41bc69271e8f2f0ea",
+        "engine.py": "e9d683bba3caf9e07c6dbe82ce444887f331867ab91cf55831cc567d43fa1a7d",
+        "robustness.py": "b73563a04941282da0bda0878cf6fe46c2fb103dbc31c76fd6ac6df8522113bd",
+        "store.py": "9bdf7d4a47731b2e51913b724d5de96372b8b8062cd33f06a694d188a659f80f",
+        "policies.py": "6858031d2acb76e28492bbf062da31b5ec6177e1f684234f804fad3df0021f24",
+        "prediction.py": "df597fc29dafd6f7b44d51c5a5fcd2cdd854578de1399897aadd6da95d509942",
+        "evidence_types.py": "2521a19cc2c6905b5bab16f3b0e014d3021c7757d0f75634858717c571490c3a",
+        "decisions.py": "b45459e85af26d6ef211d070b3ea84057c73567ca5d10b926500c1d1125046e6",
+        "metric_reporting.py": "522e2cf7f70dd91765b0ca2490be933c2f57a561de9a74408b92f14b6c078e14",
+        "domain.py": "9dd4cc19a4cf46da8cfc584fb16d56df501f2fdfaea086fde97955291e1dc1b7",
+        "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "model_evidence.py": "f9238ea82e9f60c77d4b6f9ef59463061192388076923aa23c41a9d633f25479",
+        "analysis_types.py": "c26a8bd84c6d698269f4b4fcedaf6c4f1bf1ac908879156be3ec06eead97b8e5",
+        "main.py": "46830944a0c6b6eac3313db4c5ef214de060873e49b8d164a8c96bc8d750c19a",
+        "results.py": "306059c73ac0d5ef4aea37428e586430ee371ec95942f774382172a1d1088ca6",
+        "lab.py": "8c9d5e90b997276f62c60f06c9334baf3fb73cc78c9fd386897df499fbb58e43"
+      },
+      "pip_check": "No broken requirements found.",
+      "image": "sha256:e7048d6c7b10e446ae0e223a2011f3331ad3c121b19616d2155af82cb0741139",
+      "status": "PASS",
+      "container": "undo-submission-04079ba6-target",
+      "volume": "undo-submission-04079ba6-target-data",
+      "port": 8086,
+      "smoke": "PASS",
+      "restart": "PASS",
+      "backend_tests": 97,
+      "backend_test_status": "PASS",
+      "build_command": [
+        "docker",
+        "buildx",
+        "build",
+        "--platform",
+        "linux/s390x",
+        "-f",
+        "deploy/Dockerfile",
+        "-t",
+        "undo:submission-s390x",
+        "--load",
+        "."
+      ],
+      "build_cwd": "C:/Users/<local-user>\\AppData\\Local\\Temp\\undo-submission-final-o_1nzhyg",
+      "build_status": "PASS"
+    }
+  },
+  "local_app": {
+    "url": "http://127.0.0.1:8080",
+    "health": {
+      "status": "ok",
+      "database": "ok",
+      "model_version": "synthetic-logistic-hazard-v1-8dfd5f3ab9ed",
+      "synthetic": true
+    },
+    "application_and_static_bytes_match_final_archive": true,
+    "live_all_raw_rows_exactly_unchanged": true,
+    "table_counts": {
+      "generations": 5,
+      "settings": 1,
+      "events": 7,
+      "evaluations": 27,
+      "jobs": 0,
+      "notifications": 38,
+      "audit": 38
+    },
+    "read_only_browser": {
+      "status": "PASS",
+      "baseURL": "http://127.0.0.1:8080",
+      "read_only": true,
+      "blocked_mutations": [],
+      "page_errors": [],
+      "proposal": "proposal",
+      "paths": 5000,
+      "refresh_preserved": true,
+      "shared_precision_display": true,
+      "cash_paise": 11600000,
+      "generation": 5,
+      "version": 3
+    },
+    "previous_image_preserved": "undo:before-final-repair-20261018-d628bf4c"
+  },
+  "git": {
+    "pre_existing_index_entries_preserved": 76,
+    "explicit_new_project_files_staged": 57,
+    "commits": 0,
+    "pushes": 0,
+    "unrelated_staging": false
+  },
+  "blocked": [
+    {
+      "check": "Real IBM LinuxONE execution",
+      "status": "BLOCKED",
+      "reason": "No real target host/access supplied; s390x above is emulated."
+    },
+    {
+      "check": "Docker Scout OS/image-layer scan",
+      "status": "BLOCKED",
+      "reason": "Executed command exit1 requires Docker login; dependency audits separately PASS."
+    }
+  ],
+  "model_limitations": "Experimental synthetic evidence; no established incremental decision benefit over obligation-aware rule and no real-world accuracy claim. Engine/prediction/policies/domain/validation artifact unchanged.",
+  "publication_note": "Portable copy of the actual final ZIP verification record. Local project paths/user-profile names redacted for public distribution; commands/results/hashes unchanged. Original machine-specific record retained locally in dist."
+}
